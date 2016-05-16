@@ -13,8 +13,14 @@
         <a-asset-item id="why-male-models" src="man/man.dae"></a-asset-item>
       </a-assets>
       <a-collada-model position="-3.35 0 2.55" rotation="0 -20 0" scale="3.5 3.5 3.5"
-                         src="#why-male-models"></a-collada-model>
-     <a-entity text="text: Frontend TLDR"></a-entity>
+                       src="#why-male-models">
+                       <a-animation attribute="rotation" from="0 -30 0" to="0 330 0" dur="15000"
+                     easing="linear" repeat="infinite"></a-animation>
+                     </a-collada-model>
+     <a-entity text="text: Frontend TLDR">
+       <a-animation attribute="rotation" from="0 -30 0" to="0 330 0" dur="15000"
+                       easing="linear" repeat="infinite"></a-animation>
+                     </a-entity>
     </a-scene>
   </body>
 </html>
